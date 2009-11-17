@@ -36,7 +36,7 @@ package com.collectivecolors.rpc
 			
 			amfChannels = new ChannelSet( );
 						
-			RemoteObject( connection ).channelSet  = channels;
+			RemoteObject( connection ).channelSet  = amfChannels;
 			RemoteObject( connection ).destination = 'notUsed';
 						
 			if ( source && source.length > 0 ) 
