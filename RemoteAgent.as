@@ -47,7 +47,7 @@ package com.collectivecolors.rpc
 			connection.addEventListener( FaultEvent.FAULT, connectionFaultHandler );
 			
 			// Initialize status messages.
-			_messages = new Array( );
+			message = '';
 			
 			// Initialize URL validator.
 			validator = new URLValidator( );
