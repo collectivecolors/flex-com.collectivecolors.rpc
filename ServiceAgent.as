@@ -157,7 +157,8 @@ package com.collectivecolors.rpc
 			
 			var call : AsyncToken = proc.send( );
 			
-			call.operation = operation;			
+			call.operation  = operation;
+			call.parameters = parameters;			
 		}		
 		
 		//--------------------------------------------------------------------------

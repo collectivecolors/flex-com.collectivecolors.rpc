@@ -168,7 +168,7 @@ package com.collectivecolors.rpc
 		 * 
 		 * Prototype :
 		 * 
-		 *  function resultParser( result :  Object ) : *
+		 *  function resultParser( result : Object, parameters : Array ) : *
 		 */
 		protected function executeResultHandler( event : ResultEvent, 
 		                                         parser : Function = null ) : void
@@ -179,7 +179,7 @@ package com.collectivecolors.rpc
 		  {
 		    if ( parser != null )
 		    {	    
-		      resultHandler( parser( event.result ) );
+		      resultHandler( parser( event.result, event.token.parameters ) );
 		    }
 		    else
 		    {
